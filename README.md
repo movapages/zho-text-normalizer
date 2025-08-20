@@ -1,5 +1,9 @@
 # ZHO Text Normalizer
 
+[![Crates.io](https://img.shields.io/crates/v/zho-text-normalizer)](https://crates.io/crates/zho-text-normalizer)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Rust](https://github.com/movapages/zho-text-normalizer/actions/workflows/rust.yml/badge.svg)](https://github.com/movapages/zho-text-normalizer/actions/workflows/rust.yml)
+
 A comprehensive Chinese text normalizer with Unicode support, built in Rust. Combines OpenCC's battle-tested script conversion with Unihan-based character normalization.
 
 ## Features
@@ -12,25 +16,54 @@ A comprehensive Chinese text normalizer with Unicode support, built in Rust. Com
 - **Script Detection**: Auto-detects Traditional/Simplified Chinese text
 - **Detailed Change Tracking**: Records all transformations with explanations
 
-## Installation
+## Quick Start
 
-### From crates.io
-```bash
-cargo add zho-text-normalizer
+### Installation
+
+Add this to your `Cargo.toml`:
+
+```toml
+[dependencies]
+zho-text-normalizer = { git = "https://github.com/movapages/zho-text-normalizer" }
 ```
 
-### From Source
+Or via command line:
 ```bash
-git clone https://github.com/your-username/zho-text-normalizer
+cargo add --git https://github.com/movapages/zho-text-normalizer
+```
+
+For development:
+```bash
+# Clone the repository
+git clone https://github.com/movapages/zho-text-normalizer
 cd zho-text-normalizer
+
+# Build the library
 cargo build --release
+
+# Run tests
+cargo test --workspace
+
+### Basic Usage
+
+```rust
+use zho_text_normalizer::{normalize, normalize_to_script, Script};
+
+// Simple normalization (auto-detects script)
+let result = normalize("⽅⾯問題");
+println!("Normalized: {}", result.normalized);
+
+// Convert to Simplified Chinese
+let result = normalize_to_script("這個藥", Script::SimplifiedChinese);
+println!("Simplified: {}", result.normalized);
 ```
 
-## Usage
-
-### Command Line
+### Command Line Interface
 
 ```bash
+# Install CLI tool
+cargo install zho-text-normalizer
+
 # Basic normalization (detects script automatically)
 zho-normalize "⽅⾯問題"
 
@@ -44,7 +77,9 @@ zho-normalize --format verbose "⼀、本書以說明規律為主"
 zho-normalize --validate "中國現代語法"
 ```
 
-### As a Library
+## Advanced Usage
+
+### Custom Normalization Pipeline
 
 ```rust
 use zho_text_normalizer::{TextNormalizer, Script};
@@ -52,15 +87,10 @@ use zho_text_normalizer::{TextNormalizer, Script};
 // Create a normalizer
 let normalizer = TextNormalizer::new();
 
-// Basic normalization (auto-detects script)
-let result = normalizer.normalize("⽅⾯問題", None);
-println!("Normalized: {}", result.normalized);
-
-// Convert Traditional to Simplified
+// Normalize with detailed change tracking
 let result = normalizer.normalize("這個藥", Some(Script::SimplifiedChinese));
-println!("Simplified: {}", result.normalized);
 
-// Get detailed changes
+// Inspect changes
 for change in result.changes {
     println!("{} → {} ({})", 
         change.original_char,
@@ -108,13 +138,13 @@ The normalizer processes text through the following steps:
 - **Unihan Database**: Character variants and compatibility mappings
 - **Unicode Standard**: Kangxi radical mappings and normalization forms
 
-## Dependencies
+## System Requirements
 
 - Rust 1.70+ (2021 edition)
-- OpenCC library
-- Unihan database (processed at build time)
+- OpenCC library (automatically installed via build script)
+- Unihan database (automatically downloaded and processed at build time)
 
-### Data Files
+## Data Files
 
 The normalizer uses several data files that are generated at build time:
 
@@ -123,17 +153,33 @@ The normalizer uses several data files that are generated at build time:
 - `data/processed/kangxi_mappings.json`: Kangxi radical mappings
 - `data/processed/compatibility_mappings.json`: Compatibility form mappings
 
-These files are generated from the Unihan database by running:
+These files are generated from the Unihan database automatically during the build process. If you need to regenerate them manually:
+
 ```bash
 cargo run --bin process-unihan
 ```
 
 Note: The data files are ignored by git. When using this library as a dependency, the data files will be generated automatically during the build process.
 
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Here's how you can help:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Run tests (`cargo test --workspace`)
+5. Commit your changes (`git commit -m 'Add amazing feature'`)
+6. Push to the branch (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
+
+Please make sure to update tests as appropriate and follow the existing coding style.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [OpenCC](https://github.com/BYVoid/OpenCC) for providing the core script conversion functionality
+- [Unicode Consortium](https://www.unicode.org/) for the Unihan Database
