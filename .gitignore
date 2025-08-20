@@ -1,0 +1,62 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.iml
+
+# Generated files
+/data/processed/
+/data/downloads/
+
+# OpenCC data files
+opencc/
+
+# Unihan database files
+Unihan/
+Unihan*.zip
+Unihan*.txt
+
+# Debug logs
+*.log
+debug/
+debug.log
+
+# Environment files
+.env
+.env.local
+
+# Test coverage
+coverage/
+*.profraw
+
+# Documentation
+/doc/
+/docs/generated/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Binary files
+*.bin
+*.exe
+*.dll
+*.so
+*.dylib
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
