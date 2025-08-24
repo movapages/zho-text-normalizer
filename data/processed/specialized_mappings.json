@@ -1,0 +1,4466 @@
+[
+  {
+    "source": "一",
+    "target": "壹",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "七",
+    "target": "柒",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "三",
+    "target": "叁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "丕",
+    "target": "仳",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "个",
+    "target": "個",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "中",
+    "target": "塚",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "丼",
+    "target": "井",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "乾",
+    "target": "亁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "亁",
+    "target": "乾",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "二",
+    "target": "貳",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "五",
+    "target": "伍",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "井",
+    "target": "丼",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "仇",
+    "target": "讎",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "仇",
+    "target": "讐",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "从",
+    "target": "從",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "仙",
+    "target": "僊",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "仟",
+    "target": "千",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "仳",
+    "target": "丕",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "份",
+    "target": "分",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "伍",
+    "target": "五",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "伷",
+    "target": "胄",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "佔",
+    "target": "占",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "你",
+    "target": "妳",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "你",
+    "target": "您",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "你",
+    "target": "祢",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "你",
+    "target": "袮",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "佬",
+    "target": "姆",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "來",
+    "target": "耒",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "俓",
+    "target": "勁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "個",
+    "target": "个",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "個",
+    "target": "箇",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "倖",
+    "target": "囟",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "偎",
+    "target": "渨",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "偎",
+    "target": "隈",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "偺",
+    "target": "喒",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "傁",
+    "target": "墰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "傍",
+    "target": "旁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "僊",
+    "target": "仙",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "儎",
+    "target": "載",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "儡",
+    "target": "酹",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "八",
+    "target": "捌",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "六",
+    "target": "陸",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "冣",
+    "target": "最",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kSMSZD2003Index"
+  },
+  {
+    "source": "冣",
+    "target": "聚",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kSMSZD2003Index"
+  },
+  {
+    "source": "凈",
+    "target": "淨",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "几",
+    "target": "幾",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "処",
+    "target": "處",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "分",
+    "target": "份",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "划",
+    "target": "劃",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "刺",
+    "target": "莿",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "剉",
+    "target": "銼",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "剌",
+    "target": "巤",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "剙",
+    "target": "創",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "剳",
+    "target": "劄",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "創",
+    "target": "剙",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "劃",
+    "target": "划",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "劄",
+    "target": "剳",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "劳",
+    "target": "勞",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "勁",
+    "target": "俓",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "勁",
+    "target": "徑",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "勅",
+    "target": "勑",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "勅",
+    "target": "敕",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "勑",
+    "target": "勅",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "勞",
+    "target": "劳",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "勰",
+    "target": "脅",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "匜",
+    "target": "鉈",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "sHanyuDaCidian1986:T"
+  },
+  {
+    "source": "十",
+    "target": "拾",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "千",
+    "target": "仟",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "卓",
+    "target": "棹",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "占",
+    "target": "佔",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "卩",
+    "target": "節",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "卯",
+    "target": "夘",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:T"
+  },
+  {
+    "source": "厶",
+    "target": "某",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "叁",
+    "target": "三",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "參",
+    "target": "叅",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "參",
+    "target": "薓",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "叅",
+    "target": "參",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "叉",
+    "target": "釵",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "双",
+    "target": "雙",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "叟",
+    "target": "墰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "只",
+    "target": "祇",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "号",
+    "target": "號",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "吋",
+    "target": "寸",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "含",
+    "target": "唅",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "听",
+    "target": "聽",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "呃",
+    "target": "阨",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "呆",
+    "target": "獃",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "呴",
+    "target": "詬",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "和",
+    "target": "龢",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "咥",
+    "target": "嘻",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "咮",
+    "target": "胄",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "咱",
+    "target": "喒",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "咳",
+    "target": "欬",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "咽",
+    "target": "嚥",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "哼",
+    "target": "苛",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "唅",
+    "target": "含",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "唉",
+    "target": "欸",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "唾",
+    "target": "涶",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "啊",
+    "target": "阿",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "喂",
+    "target": "餧",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "喂",
+    "target": "餵",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "喒",
+    "target": "偺",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "喒",
+    "target": "咱",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "嗻",
+    "target": "處",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "嘔",
+    "target": "慪",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "嘻",
+    "target": "咥",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "嚥",
+    "target": "咽",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "囓",
+    "target": "齧",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "四",
+    "target": "肆",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "囟",
+    "target": "倖",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "囟",
+    "target": "幸",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "囟",
+    "target": "顖",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "囮",
+    "target": "諤",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "坆",
+    "target": "墳",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "坏",
+    "target": "坯",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "坐",
+    "target": "座",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "坭",
+    "target": "泥",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "坯",
+    "target": "坏",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "域",
+    "target": "譽",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "基",
+    "target": "抍",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "基",
+    "target": "拯",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "場",
+    "target": "塲",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "堵",
+    "target": "鍺",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "sHanyuDaCidian1986:T"
+  },
+  {
+    "source": "塚",
+    "target": "中",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "塲",
+    "target": "場",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "塾",
+    "target": "孰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "墰",
+    "target": "傁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "墰",
+    "target": "叟",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "墰",
+    "target": "罈",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "墳",
+    "target": "坆",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "壳",
+    "target": "殼",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "壹",
+    "target": "一",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "夅",
+    "target": "降",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "外",
+    "target": "舀",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "夗",
+    "target": "夘",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:T"
+  },
+  {
+    "source": "夘",
+    "target": "夗",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:TZ"
+  },
+  {
+    "source": "夘",
+    "target": "卯",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:TZ"
+  },
+  {
+    "source": "奔",
+    "target": "犇",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "奶",
+    "target": "嬭",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "妳",
+    "target": "你",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "妳",
+    "target": "您",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "妳",
+    "target": "祢",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "妳",
+    "target": "袮",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "姆",
+    "target": "佬",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "姆",
+    "target": "姥",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "姥",
+    "target": "姆",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "娠",
+    "target": "暖",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "娠",
+    "target": "煖",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "媆",
+    "target": "嫰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "嫩",
+    "target": "嫰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "嫰",
+    "target": "媆",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "嫰",
+    "target": "嫩",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "嬭",
+    "target": "奶",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "嬲",
+    "target": "惱",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "孛",
+    "target": "柏",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "孛",
+    "target": "栢",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "孰",
+    "target": "塾",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "它",
+    "target": "牠",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "寠",
+    "target": "窶",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "寸",
+    "target": "吋",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "对",
+    "target": "對",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "将",
+    "target": "將",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "將",
+    "target": "将",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "將",
+    "target": "畺",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "將",
+    "target": "疆",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "尉",
+    "target": "熨",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "對",
+    "target": "对",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "尿",
+    "target": "溺",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "崋",
+    "target": "華",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu"
+  },
+  {
+    "source": "巤",
+    "target": "剌",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "巤",
+    "target": "鬣",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "帆",
+    "target": "拚",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "帚",
+    "target": "箒",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "幸",
+    "target": "囟",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "幾",
+    "target": "几",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "座",
+    "target": "坐",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "弄",
+    "target": "瘧",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "弍",
+    "target": "貳",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "強",
+    "target": "彊",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "强",
+    "target": "彊",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "彊",
+    "target": "強",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "彊",
+    "target": "强",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "当",
+    "target": "當",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "彫",
+    "target": "鵰",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "往",
+    "target": "徃",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "徃",
+    "target": "往",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "徑",
+    "target": "勁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "從",
+    "target": "从",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "御",
+    "target": "馭",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "怸",
+    "target": "悉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:TZ"
+  },
+  {
+    "source": "恋",
+    "target": "戀",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "悉",
+    "target": "怸",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "您",
+    "target": "你",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "您",
+    "target": "妳",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "您",
+    "target": "祢",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "您",
+    "target": "袮",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "惱",
+    "target": "嬲",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "惺",
+    "target": "醒",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "愈",
+    "target": "瘉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "愬",
+    "target": "訴",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "愿",
+    "target": "願",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:T"
+  },
+  {
+    "source": "慪",
+    "target": "嘔",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "憂",
+    "target": "懮",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu"
+  },
+  {
+    "source": "應",
+    "target": "硬",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "懮",
+    "target": "憂",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu"
+  },
+  {
+    "source": "戀",
+    "target": "恋",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "扁",
+    "target": "艑",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "才",
+    "target": "纔",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "才",
+    "target": "財",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "托",
+    "target": "拓",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "抍",
+    "target": "基",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "折",
+    "target": "翼",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "折",
+    "target": "拃",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "抬",
+    "target": "擡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu"
+  },
+  {
+    "source": "拃",
+    "target": "折",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "担",
+    "target": "擔",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "拆",
+    "target": "責",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "拈",
+    "target": "敁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "拓",
+    "target": "托",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "拓",
+    "target": "摭",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "拚",
+    "target": "帆",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "拯",
+    "target": "基",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "拼",
+    "target": "秉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "拽",
+    "target": "曳",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "拾",
+    "target": "十",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "按",
+    "target": "搵",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "挽",
+    "target": "掇",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "捉",
+    "target": "杓",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "捌",
+    "target": "八",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "捨",
+    "target": "舍",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "掇",
+    "target": "挽",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "掉",
+    "target": "棹",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "掉",
+    "target": "櫂",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "掩",
+    "target": "揜",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "掩",
+    "target": "揞",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "揅",
+    "target": "研",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "揜",
+    "target": "掩",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "揝",
+    "target": "攢",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "揞",
+    "target": "掩",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "揭",
+    "target": "結",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "搵",
+    "target": "按",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "摔",
+    "target": "甩",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "摭",
+    "target": "拓",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "摴",
+    "target": "舒",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "撍",
+    "target": "攢",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "撢",
+    "target": "撣",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "撣",
+    "target": "撢",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "擄",
+    "target": "虜",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "擔",
+    "target": "担",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "擡",
+    "target": "抬",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu"
+  },
+  {
+    "source": "攢",
+    "target": "揝",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "攢",
+    "target": "撍",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "敁",
+    "target": "拈",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "敕",
+    "target": "勅",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "文",
+    "target": "穩",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "斋",
+    "target": "齊",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "斍",
+    "target": "覺",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "斝",
+    "target": "檟",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "旁",
+    "target": "傍",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "晁",
+    "target": "朝",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "晰",
+    "target": "晳",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "晳",
+    "target": "晰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "暖",
+    "target": "娠",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "暖",
+    "target": "煖",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "曳",
+    "target": "拽",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "最",
+    "target": "冣",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kSMSZD2003Index"
+  },
+  {
+    "source": "朝",
+    "target": "晁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "期",
+    "target": "逞",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "朦",
+    "target": "矇",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "朧",
+    "target": "矓",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "朵",
+    "target": "朶",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "朶",
+    "target": "朵",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "杓",
+    "target": "捉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "柏",
+    "target": "孛",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "某",
+    "target": "厶",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "柒",
+    "target": "七",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "栢",
+    "target": "孛",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "桌",
+    "target": "棹",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "棹",
+    "target": "卓",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "棹",
+    "target": "掉",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "棹",
+    "target": "桌",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "榨",
+    "target": "酢",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "檟",
+    "target": "斝",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "櫂",
+    "target": "掉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "櫻",
+    "target": "蘡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "欬",
+    "target": "咳",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "欸",
+    "target": "唉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "殍",
+    "target": "莩",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "殻",
+    "target": "殼",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "殼",
+    "target": "壳",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "殼",
+    "target": "殻",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "毉",
+    "target": "瑿",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:TZ"
+  },
+  {
+    "source": "毉",
+    "target": "醫",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:TZ"
+  },
+  {
+    "source": "汨",
+    "target": "汩",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "汩",
+    "target": "汨",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "汫",
+    "target": "阱",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu"
+  },
+  {
+    "source": "沈",
+    "target": "沉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "沉",
+    "target": "沈",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "沒",
+    "target": "没",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "没",
+    "target": "沒",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "泡",
+    "target": "箔",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "泥",
+    "target": "坭",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "涶",
+    "target": "唾",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "淊",
+    "target": "淹",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kSMSZD2003Index:Z"
+  },
+  {
+    "source": "淡",
+    "target": "澹",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "淨",
+    "target": "凈",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "淹",
+    "target": "淊",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kSMSZD2003Index"
+  },
+  {
+    "source": "渨",
+    "target": "偎",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "湑",
+    "target": "醑",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "溺",
+    "target": "尿",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "滾",
+    "target": "菌",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "潦",
+    "target": "澇",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "澇",
+    "target": "潦",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "澹",
+    "target": "淡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "炫",
+    "target": "衒",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "炮",
+    "target": "炰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "炰",
+    "target": "炮",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "炸",
+    "target": "煠",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "烟",
+    "target": "菸",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "煖",
+    "target": "娠",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "煖",
+    "target": "暖",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "煖",
+    "target": "諼",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "煙",
+    "target": "菸",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "煠",
+    "target": "炸",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "熨",
+    "target": "尉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "燕",
+    "target": "鷰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kSMSZD2003Index:T"
+  },
+  {
+    "source": "牠",
+    "target": "它",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "牴",
+    "target": "觝",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "犄",
+    "target": "踦",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "犇",
+    "target": "奔",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "獃",
+    "target": "呆",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "瑿",
+    "target": "毉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:T"
+  },
+  {
+    "source": "甩",
+    "target": "摔",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "画",
+    "target": "畫",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "畊",
+    "target": "耕",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "畫",
+    "target": "画",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "當",
+    "target": "当",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "畺",
+    "target": "將",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "疆",
+    "target": "將",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "痲",
+    "target": "痳",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "痳",
+    "target": "痲",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "瘉",
+    "target": "愈",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "瘧",
+    "target": "弄",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "盪",
+    "target": "逿",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "眠",
+    "target": "緡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "着",
+    "target": "著",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "矇",
+    "target": "朦",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "矓",
+    "target": "朧",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "矰",
+    "target": "蹭",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "研",
+    "target": "揅",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "硬",
+    "target": "應",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "祇",
+    "target": "只",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "祢",
+    "target": "你",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "祢",
+    "target": "妳",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "祢",
+    "target": "您",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "祢",
+    "target": "袮",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "离",
+    "target": "離",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "秉",
+    "target": "拼",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "秤",
+    "target": "稱",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "稱",
+    "target": "秤",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "穎",
+    "target": "署",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "穩",
+    "target": "文",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "窕",
+    "target": "阿",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "窶",
+    "target": "寠",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "竜",
+    "target": "龍",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "箇",
+    "target": "個",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "箒",
+    "target": "帚",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "箔",
+    "target": "泡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "節",
+    "target": "卩",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "粘",
+    "target": "黏",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "結",
+    "target": "揭",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "絖",
+    "target": "纊",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "絣",
+    "target": "背",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "緡",
+    "target": "眠",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "縕",
+    "target": "韞",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "繢",
+    "target": "繪",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "繪",
+    "target": "繢",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "纂",
+    "target": "臇",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "纊",
+    "target": "絖",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "纔",
+    "target": "才",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "罈",
+    "target": "墰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "署",
+    "target": "穎",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "羶",
+    "target": "膻",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "翼",
+    "target": "折",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "耒",
+    "target": "來",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "耕",
+    "target": "畊",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "聚",
+    "target": "冣",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kSMSZD2003Index"
+  },
+  {
+    "source": "聽",
+    "target": "听",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "肆",
+    "target": "四",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "肕",
+    "target": "韌",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "胄",
+    "target": "伷",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "胄",
+    "target": "咮",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "背",
+    "target": "絣",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "脅",
+    "target": "勰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "脈",
+    "target": "衇",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "脉",
+    "target": "衇",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "腌",
+    "target": "醃",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "腌",
+    "target": "骯",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "膻",
+    "target": "羶",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "膾",
+    "target": "鱠",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "臇",
+    "target": "纂",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "舀",
+    "target": "外",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "舍",
+    "target": "捨",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "舒",
+    "target": "摴",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "舖",
+    "target": "鋪",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "艑",
+    "target": "扁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "苛",
+    "target": "哼",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "莩",
+    "target": "殍",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "莿",
+    "target": "刺",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "菌",
+    "target": "滾",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "華",
+    "target": "崋",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu"
+  },
+  {
+    "source": "華",
+    "target": "蕐",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "菸",
+    "target": "烟",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "菸",
+    "target": "煙",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "著",
+    "target": "着",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "著",
+    "target": "螫",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "蔞",
+    "target": "褸",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "蔴",
+    "target": "麻",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "蕐",
+    "target": "華",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "薓",
+    "target": "參",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "蘡",
+    "target": "櫻",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe:Z"
+  },
+  {
+    "source": "處",
+    "target": "処",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "處",
+    "target": "嗻",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "虜",
+    "target": "擄",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "號",
+    "target": "号",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "蜋",
+    "target": "螂",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "蜡",
+    "target": "蠟",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "蜨",
+    "target": "蝶",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "蝦",
+    "target": "鰕",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "蝶",
+    "target": "蜨",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "螂",
+    "target": "蜋",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "螫",
+    "target": "著",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "蠟",
+    "target": "蜡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "衇",
+    "target": "脈",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "衇",
+    "target": "脉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "衒",
+    "target": "炫",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "衣",
+    "target": "衤",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "衤",
+    "target": "衣",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "袮",
+    "target": "你",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "袮",
+    "target": "妳",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "袮",
+    "target": "您",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "袮",
+    "target": "祢",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "裏",
+    "target": "裡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "裒",
+    "target": "鴄",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "裡",
+    "target": "裏",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "褸",
+    "target": "蔞",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "襜",
+    "target": "輦",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "覌",
+    "target": "觀",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "覺",
+    "target": "斍",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "觀",
+    "target": "覌",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "觝",
+    "target": "牴",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "解",
+    "target": "觧",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "觧",
+    "target": "解",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "訴",
+    "target": "愬",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "詐",
+    "target": "醡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "詬",
+    "target": "呴",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "諤",
+    "target": "囮",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "諼",
+    "target": "煖",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "譽",
+    "target": "域",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "讎",
+    "target": "仇",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "讐",
+    "target": "仇",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "財",
+    "target": "才",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "責",
+    "target": "拆",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "貳",
+    "target": "二",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "貳",
+    "target": "弍",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "賺",
+    "target": "贃",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "贃",
+    "target": "賺",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "趄",
+    "target": "跙",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "跐",
+    "target": "跴",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "跙",
+    "target": "趄",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "跡",
+    "target": "速",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "跴",
+    "target": "跐",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "踦",
+    "target": "犄",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "蹟",
+    "target": "速",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "蹭",
+    "target": "矰",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "蹶",
+    "target": "蹷",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "蹷",
+    "target": "蹶",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "軲",
+    "target": "轂",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "載",
+    "target": "儎",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "輦",
+    "target": "襜",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "轂",
+    "target": "軲",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "迆",
+    "target": "迤",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "这",
+    "target": "這",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "远",
+    "target": "遠",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "迤",
+    "target": "迆",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "迨",
+    "target": "逮",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "迹",
+    "target": "速",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "這",
+    "target": "这",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "逞",
+    "target": "期",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "速",
+    "target": "跡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "速",
+    "target": "蹟",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "速",
+    "target": "迹",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "逮",
+    "target": "迨",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "逿",
+    "target": "盪",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "遠",
+    "target": "远",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "酉",
+    "target": "酋",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "酋",
+    "target": "酉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "酢",
+    "target": "榨",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "酹",
+    "target": "儡",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "醃",
+    "target": "腌",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "醑",
+    "target": "湑",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "醒",
+    "target": "惺",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "醡",
+    "target": "詐",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "醫",
+    "target": "毉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu:T"
+  },
+  {
+    "source": "釵",
+    "target": "叉",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "鉈",
+    "target": "匜",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "sHanyuDaCidian1986:TZ"
+  },
+  {
+    "source": "銼",
+    "target": "剉",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "鋪",
+    "target": "舖",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "鍺",
+    "target": "堵",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "sHanyuDaCidian1986:TZ"
+  },
+  {
+    "source": "門",
+    "target": "门",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "閒",
+    "target": "間",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "間",
+    "target": "閒",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "门",
+    "target": "門",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "阨",
+    "target": "呃",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "阱",
+    "target": "汫",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kHanYu"
+  },
+  {
+    "source": "阿",
+    "target": "啊",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "阿",
+    "target": "窕",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "降",
+    "target": "夅",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "陣",
+    "target": "陳",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "陳",
+    "target": "陣",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "陸",
+    "target": "六",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "隈",
+    "target": "偎",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "难",
+    "target": "難",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "雕",
+    "target": "鵰",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "雙",
+    "target": "双",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "離",
+    "target": "离",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "難",
+    "target": "难",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "雨",
+    "target": "馭",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "韌",
+    "target": "肕",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "韞",
+    "target": "縕",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "顖",
+    "target": "囟",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "願",
+    "target": "愿",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "餒",
+    "target": "餧",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "餧",
+    "target": "喂",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "餧",
+    "target": "餒",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "餵",
+    "target": "喂",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "馭",
+    "target": "御",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "馭",
+    "target": "雨",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "骯",
+    "target": "腌",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "骾",
+    "target": "鯁",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "鬣",
+    "target": "巤",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "鯁",
+    "target": "骾",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "鰕",
+    "target": "蝦",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "鱠",
+    "target": "膾",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "鴄",
+    "target": "裒",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "鵰",
+    "target": "彫",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "鵰",
+    "target": "雕",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "鷰",
+    "target": "燕",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kSMSZD2003Index:TZ"
+  },
+  {
+    "source": "麻",
+    "target": "蔴",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "黏",
+    "target": "粘",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "齊",
+    "target": "斋",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "齊",
+    "target": "齋",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "齊",
+    "target": "齐",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "齋",
+    "target": "齊",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "齐",
+    "target": "齊",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  },
+  {
+    "source": "齧",
+    "target": "囓",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kMeyerWempe"
+  },
+  {
+    "source": "龍",
+    "target": "竜",
+    "variant_type": "Specialized",
+    "confidence": 0.65,
+    "bidirectional": false,
+    "source_info": ""
+  },
+  {
+    "source": "龢",
+    "target": "和",
+    "variant_type": "Specialized",
+    "confidence": 0.75,
+    "bidirectional": false,
+    "source_info": "kFenn"
+  }
+]

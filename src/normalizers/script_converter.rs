@@ -155,32 +155,11 @@ impl ScriptConverter {
         let mappings_path = Path::new("data/processed/script_mappings.json");
 
         if let Ok(contents) = fs::read_to_string(mappings_path) {
-            if let Ok(mappings) =
-                serde_json::from_str::<HashMap<String, Vec<ScriptMapping>>>(&contents)
+            if let Ok(script_mappings) =
+                serde_json::from_str::<crate::types::ScriptMappings>(&contents)
             {
-                // Extract traditional to simplified mappings
-                for (key, mapping_list) in &mappings {
-                    if key.contains("traditional_to_simplified") {
-                        for mapping in mapping_list {
-                            traditional_to_simplified
-                                .entry(mapping.traditional.clone())
-                                .or_insert_with(Vec::new)
-                                .push(mapping.clone());
-                        }
-                    }
-                }
-
-                // Extract simplified to traditional mappings
-                for (key, mapping_list) in &mappings {
-                    if key.contains("simplified_to_traditional") {
-                        for mapping in mapping_list {
-                            simplified_to_traditional
-                                .entry(mapping.simplified.clone())
-                                .or_insert_with(Vec::new)
-                                .push(mapping.clone());
-                        }
-                    }
-                }
+                traditional_to_simplified = script_mappings.traditional_to_simplified;
+                simplified_to_traditional = script_mappings.simplified_to_traditional;
             }
         }
 

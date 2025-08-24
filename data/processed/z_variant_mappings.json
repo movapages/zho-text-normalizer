@@ -1,0 +1,946 @@
+[
+  {
+    "source": "併",
+    "target": "倂",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "倂",
+    "target": "併",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "値",
+    "target": "值",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "值",
+    "target": "値",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "吳",
+    "target": "吴",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "吳",
+    "target": "呉",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "吴",
+    "target": "吳",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "吴",
+    "target": "呉",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "呉",
+    "target": "吳",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "呉",
+    "target": "吴",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "塡",
+    "target": "填",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "填",
+    "target": "塡",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "墫",
+    "target": "壿",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "壿",
+    "target": "墫",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "奨",
+    "target": "奬",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "奨",
+    "target": "獎",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "奬",
+    "target": "奨",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "奬",
+    "target": "獎",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "娛",
+    "target": "娯",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "娛",
+    "target": "娱",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "娯",
+    "target": "娛",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "娯",
+    "target": "娱",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "娱",
+    "target": "娛",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "娱",
+    "target": "娯",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "媯",
+    "target": "嬀",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "嬀",
+    "target": "媯",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "帡",
+    "target": "帲",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "帲",
+    "target": "帡",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "恆",
+    "target": "恒",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "恒",
+    "target": "恆",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "悅",
+    "target": "悦",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "悦",
+    "target": "悅",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "戶",
+    "target": "户",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "戶",
+    "target": "戸",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "户",
+    "target": "戶",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "户",
+    "target": "戸",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "戸",
+    "target": "戶",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "戸",
+    "target": "户",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "挩",
+    "target": "捝",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "挿",
+    "target": "插",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "挿",
+    "target": "揷",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "捝",
+    "target": "挩",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "插",
+    "target": "挿",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "插",
+    "target": "揷",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "揷",
+    "target": "挿",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "揷",
+    "target": "插",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "揺",
+    "target": "搖",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "揺",
+    "target": "摇",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "搖",
+    "target": "揺",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "搖",
+    "target": "摇",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "摇",
+    "target": "揺",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "摇",
+    "target": "搖",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "敓",
+    "target": "敚",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "敚",
+    "target": "敓",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "晚",
+    "target": "晩",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "晩",
+    "target": "晚",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "梲",
+    "target": "棁",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "棁",
+    "target": "梲",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "榝",
+    "target": "樧",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "樧",
+    "target": "榝",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "涗",
+    "target": "涚",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "涚",
+    "target": "涗",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "溈",
+    "target": "潙",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "潙",
+    "target": "溈",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "獎",
+    "target": "奨",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "獎",
+    "target": "奬",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "研",
+    "target": "硏",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "硏",
+    "target": "研",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "稅",
+    "target": "税",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "税",
+    "target": "稅",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "絕",
+    "target": "絶",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "絙",
+    "target": "絚",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "絚",
+    "target": "絙",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "絶",
+    "target": "絕",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "緒",
+    "target": "緖",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "緖",
+    "target": "緒",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "胼",
+    "target": "腁",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "脫",
+    "target": "脱",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "脱",
+    "target": "脫",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "腁",
+    "target": "胼",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "苿",
+    "target": "茉",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "茉",
+    "target": "苿",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "蒍",
+    "target": "蔿",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "蔿",
+    "target": "蒍",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "蘷",
+    "target": "虁",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "虁",
+    "target": "蘷",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "蛻",
+    "target": "蜕",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "蜕",
+    "target": "蛻",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "訮",
+    "target": "詽",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "詽",
+    "target": "訮",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "說",
+    "target": "説",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "説",
+    "target": "說",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "謠",
+    "target": "謡",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "謡",
+    "target": "謠",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "豜",
+    "target": "豣",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "豣",
+    "target": "豜",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "跥",
+    "target": "跺",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "跺",
+    "target": "跥",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "躗",
+    "target": "躛",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "躛",
+    "target": "躗",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "軿",
+    "target": "輧",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "輧",
+    "target": "軿",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "郎",
+    "target": "郞",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "郞",
+    "target": "郎",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "郷",
+    "target": "鄉",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "郷",
+    "target": "鄕",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "鄉",
+    "target": "郷",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "鄉",
+    "target": "鄕",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "鄕",
+    "target": "郷",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "鄕",
+    "target": "鄉",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "銳",
+    "target": "鋭",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "鋭",
+    "target": "銳",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "鎭",
+    "target": "鎮",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "鎮",
+    "target": "鎭",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "隷",
+    "target": "隸",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "隸",
+    "target": "隷",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "黑",
+    "target": "黒",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "黒",
+    "target": "黑",
+    "variant_type": "ZVariant",
+    "confidence": 0.75,
+    "bidirectional": true,
+    "source_info": ""
+  }
+]

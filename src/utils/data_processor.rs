@@ -267,11 +267,18 @@ impl UnihanDataProcessor {
     }
 
     /// Process Kangxi radical mappings
+    ///
+    /// NOTE: These mappings are hardcoded (not extracted from Unihan) because:
+    /// 1. Kangxi radicals are a fixed, standardized set (214 radicals) defined by Unicode
+    /// 2. Each radical has exactly one canonical equivalent (1:1 mapping)
+    /// 3. The mapping never changes (Unicode standard is stable)
+    /// 4. No direct Unihan property exists for Kangxi → standard character mappings
+    /// 5. While Unicode decomposition exists, hardcoding is simpler and more reliable
     fn process_kangxi_mappings(&self) -> Result<(), Box<dyn std::error::Error>> {
         let mut kangxi_mappings = HashMap::new();
 
         // Kangxi Radicals (U+2F00-U+2FDF) to Standard Characters
-        // This is a comprehensive mapping of all Kangxi radicals
+        // This is a comprehensive mapping of all 214 Kangxi radicals
         let kangxi_data = [
             (0x2F00, '一'),
             (0x2F01, '丨'),

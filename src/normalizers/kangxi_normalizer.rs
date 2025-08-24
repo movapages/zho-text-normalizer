@@ -54,7 +54,23 @@ impl KangxiNormalizer {
         let mut kangxi_map = HashMap::new();
 
         // Try to load from the Kangxi mappings file
-        let mappings_path = Path::new("data/processed/kangxi_mappings.json");
+        // Try multiple possible paths
+        let possible_paths = [
+            "data/processed/kangxi_mappings.json",
+            "../zho-text-normalizer/data/processed/kangxi_mappings.json",
+            "zho-text-normalizer/data/processed/kangxi_mappings.json",
+        ];
+
+        let mut mappings_path = None;
+        for path in &possible_paths {
+            if Path::new(path).exists() {
+                mappings_path = Some(Path::new(path));
+                break;
+            }
+        }
+
+        let mappings_path =
+            mappings_path.unwrap_or(Path::new("data/processed/kangxi_mappings.json"));
 
         if let Ok(contents) = fs::read_to_string(mappings_path) {
             if let Ok(mappings) = serde_json::from_str::<HashMap<String, String>>(&contents) {
@@ -68,30 +84,9 @@ impl KangxiNormalizer {
             }
         }
 
-        // Fallback to hardcoded mappings if file doesn't exist
+        // No fallback needed - JSON file is always generated and committed to Git
         if kangxi_map.is_empty() {
-            // Kangxi Radicals (U+2F00-U+2FDF) to Standard Characters
-            // Radical 1-20
-            kangxi_map.insert('⼀', '一'); // Radical 1
-            kangxi_map.insert('丨', '丨'); // Radical 2
-            kangxi_map.insert('丶', '丶'); // Radical 3
-            kangxi_map.insert('丿', '丿'); // Radical 4
-            kangxi_map.insert('乙', '乙'); // Radical 5
-            kangxi_map.insert('亅', '亅'); // Radical 6
-            kangxi_map.insert('二', '二'); // Radical 7
-            kangxi_map.insert('亠', '亠'); // Radical 8
-            kangxi_map.insert('人', '人'); // Radical 9
-            kangxi_map.insert('儿', '儿'); // Radical 10
-            kangxi_map.insert('入', '入'); // Radical 11
-            kangxi_map.insert('八', '八'); // Radical 12
-            kangxi_map.insert('冂', '冂'); // Radical 13
-            kangxi_map.insert('冖', '冖'); // Radical 14
-            kangxi_map.insert('冫', '冫'); // Radical 15
-            kangxi_map.insert('几', '几'); // Radical 16
-            kangxi_map.insert('凵', '凵'); // Radical 17
-            kangxi_map.insert('刀', '刀'); // Radical 18
-            kangxi_map.insert('力', '力'); // Radical 19
-            kangxi_map.insert('勹', '勹'); // Radical 20
+            eprintln!("Warning: Failed to load Kangxi mappings from JSON file");
         }
 
         kangxi_map

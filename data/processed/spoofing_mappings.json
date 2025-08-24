@@ -1,0 +1,546 @@
+[
+  {
+    "source": "凐",
+    "target": "湮",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凑",
+    "target": "湊",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凒",
+    "target": "溰",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凓",
+    "target": "溧",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凔",
+    "target": "滄",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凗",
+    "target": "漼",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凘",
+    "target": "澌",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凙",
+    "target": "澤",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凚",
+    "target": "澿",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凜",
+    "target": "澟",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "凟",
+    "target": "瀆",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "卄",
+    "target": "卝",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "卄",
+    "target": "艹",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "卝",
+    "target": "卄",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "卝",
+    "target": "艹",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "啓",
+    "target": "啟",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "啟",
+    "target": "啓",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "喦",
+    "target": "嵒",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "妹",
+    "target": "妺",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "妺",
+    "target": "妹",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "嵒",
+    "target": "喦",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "抹",
+    "target": "抺",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "抺",
+    "target": "抹",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "昧",
+    "target": "昩",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "昩",
+    "target": "昧",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "朌",
+    "target": "肦",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "朏",
+    "target": "胐",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "朐",
+    "target": "胊",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "朓",
+    "target": "脁",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "朘",
+    "target": "脧",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "朣",
+    "target": "膧",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "杮",
+    "target": "柿",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "柿",
+    "target": "杮",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "沫",
+    "target": "沬",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "沬",
+    "target": "沫",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "湊",
+    "target": "凑",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "湌",
+    "target": "飡",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "湮",
+    "target": "凐",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "溤",
+    "target": "馮",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "溧",
+    "target": "凓",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "溰",
+    "target": "凒",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "滄",
+    "target": "凔",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "漼",
+    "target": "凗",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "澌",
+    "target": "凘",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "澟",
+    "target": "凜",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "澤",
+    "target": "凙",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "澿",
+    "target": "凚",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "濂",
+    "target": "濓",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "濓",
+    "target": "濂",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "瀆",
+    "target": "凟",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "瑤",
+    "target": "瑶",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "瑶",
+    "target": "瑤",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "眛",
+    "target": "眜",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "眜",
+    "target": "眛",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "肦",
+    "target": "朌",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "胊",
+    "target": "朐",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "胐",
+    "target": "朏",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "脁",
+    "target": "朓",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "脧",
+    "target": "朘",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "膧",
+    "target": "朣",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "艹",
+    "target": "卄",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "艹",
+    "target": "卝",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "讆",
+    "target": "讏",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "讏",
+    "target": "讆",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "赿",
+    "target": "趆",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "趆",
+    "target": "赿",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "飡",
+    "target": "湌",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  },
+  {
+    "source": "馮",
+    "target": "溤",
+    "variant_type": "Spoofing",
+    "confidence": 0.8,
+    "bidirectional": true,
+    "source_info": ""
+  }
+]

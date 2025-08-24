@@ -11,17 +11,16 @@ Cargo.lock
 .DS_Store
 *.iml
 
-# Generated files
-/data/processed/
+# Generated files - ALLOW essential files for Git distribution
 /data/downloads/
+# Note: data/processed/ is included for portability
 
-# OpenCC data files
+# OpenCC data files (large external dependency)
 opencc/
 
-# Unihan database files
-Unihan/
+# Unihan database files - ALLOW essential files for Git distribution  
 Unihan*.zip
-Unihan*.txt
+# Note: Unihan/ directory is included for source data
 
 # Debug logs
 *.log
