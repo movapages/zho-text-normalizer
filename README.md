@@ -4,17 +4,26 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Rust](https://github.com/movapages/zho-text-normalizer/actions/workflows/rust.yml/badge.svg)](https://github.com/movapages/zho-text-normalizer/actions/workflows/rust.yml)
 
-A comprehensive Chinese text normalizer with Unicode support, built in Rust. Combines OpenCC's battle-tested script conversion with Unihan-based character normalization.
+A comprehensive Chinese text normalizer with Unicode support, built in Rust. Features **18,473+ character mappings** from authentic Unicode/Unihan data, combining OpenCC's script conversion with advanced character variant normalization.
 
 ## Features
 
-- **Script Conversion**: Traditional ↔ Simplified Chinese conversion using OpenCC
-- **Kangxi Radical Normalization**: Converts Unicode Kangxi radicals to standard characters
-- **Character Variant Normalization**: Normalizes character variants using Unihan data
-- **Compatibility Form Normalization**: Converts compatibility characters to standard forms
+### **🎯 Comprehensive Normalization**
+- **13,317 Script Mappings**: Traditional ↔ Simplified conversion via OpenCC integration
+- **4,122 Variant Mappings**: Semantic, spoofing, Z-variants, and specialized character forms
+- **820 Compatibility Mappings**: Real `kCompatibilityVariant` from Unicode Unihan database
+- **214 Kangxi Radicals**: Complete Unicode Kangxi radical → standard character conversion
+
+### **🧠 Smart Processing**
+- **Confidence-Based Filtering**: Prevents over-normalization with multi-source validation
+- **Script Auto-Detection**: Intelligent Traditional/Simplified Chinese detection
 - **Unicode Normalization**: NFC normalization for consistent text representation
-- **Script Detection**: Auto-detects Traditional/Simplified Chinese text
-- **Detailed Change Tracking**: Records all transformations with explanations
+- **Detailed Change Tracking**: Complete audit trail of all transformations
+
+### **⚡ Performance & Portability**
+- **Git-Friendly**: All mapping data included (no external downloads required)
+- **Zero Dependencies**: Self-contained with embedded Unicode data
+- **Fast Loading**: Optimized JSON parsing for quick startup
 
 ## Quick Start
 
@@ -153,13 +162,28 @@ The normalizer uses several data files that are generated at build time:
 - `data/processed/kangxi_mappings.json`: Kangxi radical mappings
 - `data/processed/compatibility_mappings.json`: Compatibility form mappings
 
-These files are generated from the Unihan database automatically during the build process. If you need to regenerate them manually:
+These files are pre-generated from the official Unicode Unihan database and **included in the Git repository** for portability. The library works out-of-the-box without requiring external downloads or build scripts.
+
+If you need to regenerate the mappings (e.g., after updating Unihan data):
 
 ```bash
-cargo run --bin process-unihan
+cargo run --bin process-unihan --force
 ```
 
-Note: The data files are ignored by git. When using this library as a dependency, the data files will be generated automatically during the build process.
+**Note**: All mapping files are committed to Git, ensuring the library is fully portable and works immediately after cloning.
+
+## Examples
+
+The `examples/` directory contains comprehensive usage examples:
+
+- **`basic_usage.rs`**: Core functionality including script conversion, variant normalization, and change tracking
+- **`advanced_usage.rs`**: Individual normalizer components, statistics, batch processing, and validation mode
+
+Run examples with:
+```bash
+cargo run --example basic_usage
+cargo run --example advanced_usage
+```
 
 ## Contributing
 

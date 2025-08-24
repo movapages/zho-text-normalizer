@@ -2,11 +2,15 @@
 name = "zho-text-normalizer"
 version = "0.1.0"
 edition = "2021"
-description = "Comprehensive Chinese text normalizer with OpenCC and Unihan support"
+description = "Comprehensive Chinese text normalizer with 18,473+ character mappings from Unicode/Unihan data"
 license = "MIT"
-repository = "https://github.com/your-username/zho-text-normalizer"
-keywords = ["chinese", "traditional", "simplified", "opencc", "unihan"]
-categories = ["text-processing", "internationalization"]
+repository = "https://github.com/movapages/zho-text-normalizer"
+homepage = "https://github.com/movapages/zho-text-normalizer"
+documentation = "https://docs.rs/zho-text-normalizer"
+keywords = ["chinese", "traditional", "simplified", "unicode", "unihan", "normalization"]
+categories = ["text-processing", "internationalization", "localization"]
+readme = "README.md"
+authors = ["ZHO Text Normalizer Contributors"]
 
 [lib]
 name = "zho_text_normalizer"
