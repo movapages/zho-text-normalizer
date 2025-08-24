@@ -18,9 +18,10 @@ Cargo.lock
 # OpenCC data files (large external dependency)
 opencc/
 
-# Unihan database files - ALLOW essential files for Git distribution  
+# Unihan database files (large source files - not needed for runtime)
+Unihan/
 Unihan*.zip
-# Note: Unihan/ directory is included for source data
+Unihan*.txt
 
 # Debug logs
 *.log
