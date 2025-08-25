@@ -143,7 +143,7 @@ impl ScriptConverter {
         ch // No conversion
     }
 
-    /// Load comprehensive mappings from the processed data
+    /// Load comprehensive mappings from the new clean data structure
     fn load_comprehensive_mappings() -> (
         HashMap<String, Vec<ScriptMapping>>,
         HashMap<String, Vec<ScriptMapping>>,
@@ -151,15 +151,43 @@ impl ScriptConverter {
         let mut traditional_to_simplified = HashMap::new();
         let mut simplified_to_traditional = HashMap::new();
 
-        // Try to load from the script mappings file
-        let mappings_path = Path::new("data/processed/script_mappings.json");
+        // Load Traditional → Simplified mappings
+        let t2s_path = Path::new("data/processed/script_conversion/traditional_to_simplified.json");
+        if let Ok(contents) = fs::read_to_string(t2s_path) {
+            if let Ok(t2s_mappings) = serde_json::from_str::<HashMap<String, String>>(&contents) {
+                for (trad, simp) in t2s_mappings {
+                    let mapping = ScriptMapping {
+                        traditional: trad.clone(),
+                        simplified: simp.clone(),
+                        pinyin: String::new(),
+                        zhuyin: String::new(),
+                        frequency: 1,
+                    };
+                    traditional_to_simplified
+                        .entry(trad)
+                        .or_insert_with(Vec::new)
+                        .push(mapping);
+                }
+            }
+        }
 
-        if let Ok(contents) = fs::read_to_string(mappings_path) {
-            if let Ok(script_mappings) =
-                serde_json::from_str::<crate::types::ScriptMappings>(&contents)
-            {
-                traditional_to_simplified = script_mappings.traditional_to_simplified;
-                simplified_to_traditional = script_mappings.simplified_to_traditional;
+        // Load Simplified → Traditional mappings
+        let s2t_path = Path::new("data/processed/script_conversion/simplified_to_traditional.json");
+        if let Ok(contents) = fs::read_to_string(s2t_path) {
+            if let Ok(s2t_mappings) = serde_json::from_str::<HashMap<String, String>>(&contents) {
+                for (simp, trad) in s2t_mappings {
+                    let mapping = ScriptMapping {
+                        traditional: trad.clone(),
+                        simplified: simp.clone(),
+                        pinyin: String::new(),
+                        zhuyin: String::new(),
+                        frequency: 1,
+                    };
+                    simplified_to_traditional
+                        .entry(simp)
+                        .or_insert_with(Vec::new)
+                        .push(mapping);
+                }
             }
         }
 

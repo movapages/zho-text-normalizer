@@ -7,6 +7,7 @@
 //! - Compatibility form normalization
 //! - Unicode NFC normalization
 
+pub mod constants;
 pub mod normalizers;
 pub mod types;
 pub mod utils;
@@ -40,7 +41,7 @@ mod tests {
     #[test]
     fn test_variant_normalization() {
         let result = normalize("硏究敎育");
-        assert_eq!(result.normalized, "硏究敎毓");
+        assert_eq!(result.normalized, "硏究教育"); // Updated for kIICore algorithm
         assert!(!result.changes.is_empty());
     }
 

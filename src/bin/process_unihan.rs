@@ -35,47 +35,24 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Create output directory if it doesn't exist
     std::fs::create_dir_all(&args.output_dir)?;
 
-    let output_path = format!("{}/script_mappings.json", args.output_dir);
+    // Check if any output files already exist (only check if not forcing)
+    if !args.force {
+        let script_dir = format!("{}/script_conversion", args.output_dir);
+        let norm_dir = format!("{}/normalization", args.output_dir);
 
-    // Check if output file already exists
-    if Path::new(&output_path).exists() && !args.force {
-        println!("Output file already exists: {}", output_path);
-        println!("Use --force to reprocess the data.");
-        return Ok(());
+        if Path::new(&script_dir).exists() || Path::new(&norm_dir).exists() {
+            println!("Output directories already exist. Use --force to reprocess the data.");
+            return Ok(());
+        }
     }
 
-    // Process the Unihan data
-    println!("Extracting Traditional ↔ Simplified mappings...");
-    let mappings = UnihanDataProcessor::process_all()?;
+    // Process the Unihan data with clean separation
+    println!("🚀 Processing Unihan data with clean separation...");
+    UnihanDataProcessor::process_all()?;
 
-    // Save the mappings
-    println!("Saving mappings to: {}", output_path);
-    UnihanDataProcessor::save_mappings(&mappings, &output_path)?;
-
-    // Print statistics
-    println!("\nProcessing complete!");
-    println!("Statistics:");
-    println!("  Total mappings: {}", mappings.statistics.total_mappings);
-    println!(
-        "  Unique traditional characters: {}",
-        mappings.statistics.unique_traditional
-    );
-    println!(
-        "  Unique simplified characters: {}",
-        mappings.statistics.unique_simplified
-    );
-    println!(
-        "  Ambiguous mappings: {}",
-        mappings.statistics.ambiguous_mappings
-    );
-    println!(
-        "  Single character mappings: {}",
-        mappings.statistics.single_character_mappings
-    );
-    println!(
-        "  Multi-character mappings: {}",
-        mappings.statistics.multi_character_mappings
-    );
+    println!("\n✅ Processing complete! Check the generated files:");
+    println!("  📁 Script conversion: data/processed/script_conversion/");
+    println!("  📁 Normalization: data/processed/normalization/");
 
     Ok(())
 }

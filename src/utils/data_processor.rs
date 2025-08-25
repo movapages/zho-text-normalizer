@@ -1,75 +1,66 @@
 //! Data processor for Unihan database files
 
-use crate::types::{ScriptMapping, ScriptMappingStats, ScriptMappings};
+// Note: ScriptMapping types removed as we now use simple HashMap<String, String> for clean data
 use crate::utils::unicode_utils::code_point_to_char;
 use serde_json;
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::fs;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
+
+/// Data file path constants to avoid repetition
+mod paths {
+    pub const SCRIPT_DIR: &str = "data/processed/script_conversion";
+    pub const NORM_DIR: &str = "data/processed/normalization";
+
+    pub const T2S_MAPPINGS: &str =
+        "data/processed/script_conversion/traditional_to_simplified.json";
+    pub const S2T_MAPPINGS: &str =
+        "data/processed/script_conversion/simplified_to_traditional.json";
+    pub const SCRIPT_STATS: &str = "data/processed/script_conversion/script_conversion_stats.json";
+
+    pub const SEMANTIC_VARIANTS: &str = "data/processed/normalization/semantic_variants.json";
+    pub const COMPAT_VARIANTS: &str = "data/processed/normalization/compatibility_variants.json";
+    pub const KANGXI_RADICALS: &str = "data/processed/normalization/kangxi_radicals.json";
+    pub const NORM_STATS: &str = "data/processed/normalization/normalization_stats.json";
+
+    pub const UNIHAN_IRG: &str = "Unihan/Unihan_IRGSources.txt";
+}
 
 /// Processor for Unihan database files
 pub struct UnihanDataProcessor;
 
 impl UnihanDataProcessor {
-    /// Process all Unihan files and generate mappings
-    pub fn process_all() -> Result<ScriptMappings, Box<dyn std::error::Error>> {
+    /// Process all Unihan files and generate clean separated mappings
+    pub fn process_all() -> Result<(), Box<dyn std::error::Error>> {
         let processor = Self;
+        println!("🚀 Starting clean data generation with proper separation...");
 
-        // Process script mappings (Traditional ↔ Simplified)
-        let script_variants = processor.process_script_variants("Unihan/Unihan_Variants.txt")?;
+        // Step 1: Process script conversion mappings (Traditional ↔ Simplified)
+        println!("\n📋 Step 1: Processing script conversion mappings...");
+        processor.process_script_conversion_mappings("Unihan/Unihan_Variants.txt")?;
 
-        // Process character form mappings (variants, compatibility, etc.)
-        processor.process_character_form_mappings("Unihan/Unihan_Variants.txt")?;
+        // Step 2: Process normalization mappings (variants, compatibility, etc.)
+        // EXCLUDING pairs that already exist in script conversion
+        println!("\n📋 Step 2: Processing normalization mappings...");
+        processor.process_normalization_mappings(
+            "Unihan/Unihan_Variants.txt",
+            "Unihan/Unihan_IRGSources.txt",
+        )?;
 
-        // Process Kangxi radical mappings
-        processor.process_kangxi_mappings()?;
-
-        // Combine script data into the final structure
-        let mut traditional_to_simplified = HashMap::new();
-        let mut simplified_to_traditional = HashMap::new();
-
-        for (traditional, simplified, pinyin, zhuyin, frequency) in script_variants {
-            let mapping = ScriptMapping {
-                traditional,
-                simplified,
-                pinyin,
-                zhuyin,
-                frequency,
-            };
-
-            // Add to traditional to simplified mapping
-            traditional_to_simplified
-                .entry(mapping.traditional.clone())
-                .or_insert_with(Vec::new)
-                .push(mapping.clone());
-
-            // Add to simplified to traditional mapping
-            simplified_to_traditional
-                .entry(mapping.simplified.clone())
-                .or_insert_with(Vec::new)
-                .push(mapping);
-        }
-
-        // Calculate statistics
-        let stats =
-            processor.calculate_stats(&traditional_to_simplified, &simplified_to_traditional);
-
-        Ok(ScriptMappings {
-            traditional_to_simplified,
-            simplified_to_traditional,
-            statistics: stats,
-        })
+        println!("\n✅ Clean data generation completed!");
+        Ok(())
     }
 
-    /// Process script variants (Traditional ↔ Simplified) from kSimplifiedVariant and kTraditionalVariant
-    fn process_script_variants(
+    /// Process script conversion mappings (Traditional ↔ Simplified) from kSimplifiedVariant and kTraditionalVariant
+    fn process_script_conversion_mappings(
         &self,
         path: &str,
-    ) -> Result<Vec<(String, String, String, String, u32)>, Box<dyn std::error::Error>> {
+    ) -> Result<(), Box<dyn std::error::Error>> {
         // Collect raw relationships
-        let mut t2s_multi: HashMap<String, std::collections::HashSet<String>> = HashMap::new();
-        let mut s2t_multi: HashMap<String, std::collections::HashSet<String>> = HashMap::new();
+        let mut t2s_mappings: HashMap<String, String> = HashMap::new();
+        let mut s2t_mappings: HashMap<String, String> = HashMap::new();
+        let mut processed_pairs: HashSet<(String, String)> = HashSet::new();
 
         let file = File::open(path)?;
         let reader = BufReader::new(file);
@@ -98,22 +89,29 @@ impl UnihanDataProcessor {
                     // A kSimplifiedVariant B => A (traditional) → B (simplified)
                     if let Some(first) = targets_raw.split_whitespace().next() {
                         if let Some(target_char) = code_point_to_char(first) {
-                            t2s_multi
-                                .entry(source_char.to_string())
-                                .or_default()
-                                .insert(target_char.to_string());
+                            let trad = source_char.to_string();
+                            let simp = target_char.to_string();
+
+                            if !processed_pairs.contains(&(trad.clone(), simp.clone())) {
+                                t2s_mappings.insert(trad.clone(), simp.clone());
+                                processed_pairs.insert((trad, simp));
+                            }
                         }
                     }
                 }
                 "kTraditionalVariant" => {
-                    // A kTraditionalVariant B C ... => A (simplified) → {B, C, ...} (traditional)
-                    for target_cp in targets_raw.split_whitespace() {
-                        let clean = target_cp.split('<').next().unwrap_or(target_cp);
+                    // A kTraditionalVariant B => A (simplified) → B (traditional)
+                    // Only take the first one to avoid ambiguity
+                    if let Some(first) = targets_raw.split_whitespace().next() {
+                        let clean = first.split('<').next().unwrap_or(first);
                         if let Some(target_char) = code_point_to_char(clean) {
-                            s2t_multi
-                                .entry(source_char.to_string())
-                                .or_default()
-                                .insert(target_char.to_string());
+                            let simp = source_char.to_string();
+                            let trad = target_char.to_string();
+
+                            if !processed_pairs.contains(&(trad.clone(), simp.clone())) {
+                                s2t_mappings.insert(simp.clone(), trad.clone());
+                                processed_pairs.insert((trad, simp));
+                            }
                         }
                     }
                 }
@@ -121,48 +119,118 @@ impl UnihanDataProcessor {
             }
         }
 
-        // Build final mapping list with rules:
-        // - Traditional→Simplified: allow many-to-one (collapse) using t2s_multi
-        // - Simplified→Traditional: only one-to-one (unique) using s2t_multi and cross-check with t2s_multi
-        // - Self-mappings will be handled by the converter when no mapping is found
-        let mut final_mappings: Vec<(String, String, String, String, u32)> = Vec::new();
+        // Save Traditional → Simplified mappings
+        let t2s_path = paths::T2S_MAPPINGS;
+        let t2s_json = serde_json::to_string_pretty(&t2s_mappings)?;
+        fs::write(t2s_path, t2s_json)?;
+        println!(
+            "✅ Saved {} Traditional→Simplified mappings to: {}",
+            t2s_mappings.len(),
+            t2s_path
+        );
 
-        // First, add all proper T→S mappings
-        for (t, s_set) in &t2s_multi {
-            for s in s_set {
-                final_mappings.push((t.clone(), s.clone(), String::new(), String::new(), 1));
-            }
-        }
+        // Save Simplified → Traditional mappings
+        let s2t_path = paths::S2T_MAPPINGS;
+        let s2t_json = serde_json::to_string_pretty(&s2t_mappings)?;
+        fs::write(s2t_path, s2t_json)?;
+        println!(
+            "✅ Saved {} Simplified→Traditional mappings to: {}",
+            s2t_mappings.len(),
+            s2t_path
+        );
 
-        // Then, add S→T mappings (only one-to-one)
-        for (s, t_set) in &s2t_multi {
-            if t_set.len() == 1 {
-                let t = t_set.iter().next().unwrap().clone();
-                // Ensure t→s exists (one-to-one consistency)
-                if t2s_multi
-                    .get(&t)
-                    .map(|ss| ss.len() == 1 && ss.contains(s))
-                    .unwrap_or(false)
-                {
-                    final_mappings.push((t, s.clone(), String::new(), String::new(), 1));
+        // Save statistics
+        let stats = serde_json::json!({
+            "traditional_to_simplified_count": t2s_mappings.len(),
+            "simplified_to_traditional_count": s2t_mappings.len(),
+            "total_script_conversion_pairs": processed_pairs.len(),
+            "generation_timestamp": std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).unwrap().as_secs()
+        });
+        let stats_path = paths::SCRIPT_STATS;
+        fs::write(stats_path, serde_json::to_string_pretty(&stats)?)?;
+        println!("✅ Saved statistics to: {}", stats_path);
+
+        Ok(())
+    }
+
+    /// Process normalization mappings (variants → standard forms) EXCLUDING script conversion pairs
+    fn process_normalization_mappings(
+        &self,
+        variants_path: &str,
+        irg_path: &str,
+    ) -> Result<(), Box<dyn std::error::Error>> {
+        // Step 1: Load existing script conversion pairs to exclude them
+        let script_pairs = self.load_script_conversion_pairs()?;
+        println!(
+            "📋 Loaded {} script conversion pairs to exclude",
+            script_pairs.len()
+        );
+
+        // Step 2: Process semantic variants
+        let semantic_variants =
+            self.process_semantic_variants_clean(variants_path, &script_pairs)?;
+
+        // Step 3: Process compatibility variants
+        let compatibility_variants =
+            self.process_compatibility_variants_clean(irg_path, &script_pairs)?;
+
+        // Step 4: Process Kangxi radicals
+        let kangxi_variants = self.process_kangxi_radicals_clean(&script_pairs)?;
+
+        // Step 5: Save normalization statistics
+        let stats = serde_json::json!({
+            "semantic_variants_count": semantic_variants.len(),
+            "compatibility_variants_count": compatibility_variants.len(),
+            "kangxi_radicals_count": kangxi_variants.len(),
+            "total_normalization_mappings": semantic_variants.len() + compatibility_variants.len() + kangxi_variants.len(),
+            "excluded_script_pairs": script_pairs.len(),
+            "generation_timestamp": std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).unwrap().as_secs()
+        });
+        let stats_path = "data/processed/normalization/normalization_stats.json";
+        fs::write(stats_path, serde_json::to_string_pretty(&stats)?)?;
+        println!("✅ Saved normalization statistics to: {}", stats_path);
+
+        Ok(())
+    }
+
+    /// Load script conversion pairs to exclude from normalization
+    fn load_script_conversion_pairs(
+        &self,
+    ) -> Result<HashSet<(String, String)>, Box<dyn std::error::Error>> {
+        let mut pairs = HashSet::new();
+
+        // Load Traditional → Simplified
+        if let Ok(contents) =
+            fs::read_to_string("data/processed/script_conversion/traditional_to_simplified.json")
+        {
+            if let Ok(mappings) = serde_json::from_str::<HashMap<String, String>>(&contents) {
+                for (trad, simp) in mappings {
+                    pairs.insert((trad, simp));
                 }
             }
         }
 
-        // Note: Self-mappings are handled by the converter when no explicit mapping is found
-        // This prevents self-mappings from shadowing proper conversions
+        // Load Simplified → Traditional
+        if let Ok(contents) =
+            fs::read_to_string("data/processed/script_conversion/simplified_to_traditional.json")
+        {
+            if let Ok(mappings) = serde_json::from_str::<HashMap<String, String>>(&contents) {
+                for (simp, trad) in mappings {
+                    pairs.insert((trad, simp));
+                }
+            }
+        }
 
-        Ok(final_mappings)
+        Ok(pairs)
     }
 
-    /// Process character form mappings (variants, compatibility, etc.)
-    fn process_character_form_mappings(
+    /// Process semantic variants with proper standard form detection, excluding script pairs
+    fn process_semantic_variants_clean(
         &self,
         path: &str,
-    ) -> Result<(), Box<dyn std::error::Error>> {
-        let mut variant_mappings = HashMap::new();
-        let mut compatibility_mappings = HashMap::new();
-
+        script_pairs: &HashSet<(String, String)>,
+    ) -> Result<HashMap<String, String>, Box<dyn std::error::Error>> {
+        let mut semantic_mappings = HashMap::new();
         let file = File::open(path)?;
         let reader = BufReader::new(file);
 
@@ -173,112 +241,172 @@ impl UnihanDataProcessor {
             }
 
             let parts: Vec<&str> = line.split('\t').collect();
-            if parts.len() < 3 {
+            if parts.len() < 3 || parts[1] != "kSemanticVariant" {
                 continue;
             }
 
             let source_cp = parts[0];
-            let kind = parts[1];
             let targets_raw = parts[2];
 
             let Some(source_char) = code_point_to_char(source_cp) else {
                 continue;
             };
 
-            match kind {
-                "kSemanticVariant" | "kZVariant" | "kSpecializedSemanticVariant" => {
-                    // Handle semantic variants for character normalization
-                    let targets: Vec<&str> = targets_raw.split_whitespace().collect();
-                    if targets.len() == 1 {
-                        let clean_target = targets[0].split('<').next().unwrap_or(targets[0]);
-                        if let Some(target_char) = code_point_to_char(clean_target) {
-                            let source_code = source_char as u32;
-                            let target_code = target_char as u32;
+            // Process each target
+            for target_raw in targets_raw.split_whitespace() {
+                let clean_target = target_raw.split('<').next().unwrap_or(target_raw);
+                if let Some(target_char) = code_point_to_char(clean_target) {
+                    let source_str = source_char.to_string();
+                    let target_str = target_char.to_string();
 
-                            if source_code >= 0x4E00
-                                && source_code <= 0x9FFF
-                                && target_code >= 0x4E00
-                                && target_code <= 0x9FFF
-                                && source_char != target_char
-                            {
-                                // Better heuristic: use character complexity
-                                let source_complexity = Self::estimate_complexity(source_char);
-                                let target_complexity = Self::estimate_complexity(target_char);
+                    // Skip if this pair is already handled by script conversion
+                    if script_pairs.contains(&(source_str.clone(), target_str.clone()))
+                        || script_pairs.contains(&(target_str.clone(), source_str.clone()))
+                    {
+                        continue;
+                    }
 
-                                if source_complexity > target_complexity {
-                                    variant_mappings
-                                        .insert(source_char.to_string(), target_char.to_string());
-                                } else if target_complexity > source_complexity {
-                                    variant_mappings
-                                        .insert(target_char.to_string(), source_char.to_string());
-                                }
-                                // If complexity is equal, skip to avoid ambiguity
-                            }
-                        }
+                    // Determine standard form using Unicode block priority
+                    if let Some((variant, standard)) =
+                        self.determine_standard_form(source_char, target_char)
+                    {
+                        semantic_mappings.insert(variant.to_string(), standard.to_string());
                     }
                 }
-                "kCompatibilityVariant" => {
-                    // Handle compatibility variants
-                    let targets: Vec<&str> = targets_raw.split_whitespace().collect();
-                    if targets.len() == 1 {
-                        let clean_target = targets[0].split('<').next().unwrap_or(targets[0]);
-                        if let Some(target_char) = code_point_to_char(clean_target) {
-                            let source_code = source_char as u32;
-                            let target_code = target_char as u32;
-
-                            if source_code >= 0x4E00
-                                && source_code <= 0x9FFF
-                                && target_code >= 0x4E00
-                                && target_code <= 0x9FFF
-                                && source_char != target_char
-                            {
-                                // For compatibility variants, assume the compatibility form is the variant
-                                compatibility_mappings
-                                    .insert(source_char.to_string(), target_char.to_string());
-                            }
-                        }
-                    }
-                }
-                _ => {}
             }
         }
 
-        // Save variant mappings
-        let variant_mappings_path = "data/processed/variant_mappings.json";
-        let variant_mappings_json = serde_json::to_string_pretty(&variant_mappings)?;
-        fs::write(variant_mappings_path, variant_mappings_json)?;
+        // Save semantic variants
+        let path = "data/processed/normalization/semantic_variants.json";
+        let json = serde_json::to_string_pretty(&semantic_mappings)?;
+        fs::write(path, json)?;
         println!(
-            "Saved {} variant mappings to: {}",
-            variant_mappings.len(),
-            variant_mappings_path
+            "✅ Saved {} semantic variant mappings to: {}",
+            semantic_mappings.len(),
+            path
         );
 
-        // Save compatibility mappings
-        let compatibility_mappings_path = "data/processed/compatibility_mappings.json";
-        let compatibility_mappings_json = serde_json::to_string_pretty(&compatibility_mappings)?;
-        fs::write(compatibility_mappings_path, compatibility_mappings_json)?;
-        println!(
-            "Saved {} compatibility mappings to: {}",
-            compatibility_mappings.len(),
-            compatibility_mappings_path
-        );
-
-        Ok(())
+        Ok(semantic_mappings)
     }
 
-    /// Process Kangxi radical mappings
-    ///
-    /// NOTE: These mappings are hardcoded (not extracted from Unihan) because:
-    /// 1. Kangxi radicals are a fixed, standardized set (214 radicals) defined by Unicode
-    /// 2. Each radical has exactly one canonical equivalent (1:1 mapping)
-    /// 3. The mapping never changes (Unicode standard is stable)
-    /// 4. No direct Unihan property exists for Kangxi → standard character mappings
-    /// 5. While Unicode decomposition exists, hardcoding is simpler and more reliable
-    fn process_kangxi_mappings(&self) -> Result<(), Box<dyn std::error::Error>> {
+    /// Determine which character is the standard form
+    fn determine_standard_form(&self, char1: char, char2: char) -> Option<(char, char)> {
+        let code1 = char1 as u32;
+        let code2 = char2 as u32;
+
+        // Primary rule: Main CJK block (U+4E00-U+9FFF) is preferred over compatibility blocks
+        let is_main_1 = code1 >= 0x4E00 && code1 <= 0x9FFF;
+        let is_main_2 = code2 >= 0x4E00 && code2 <= 0x9FFF;
+
+        match (is_main_1, is_main_2) {
+            (true, false) => Some((char2, char1)), // compatibility → main
+            (false, true) => Some((char1, char2)), // compatibility → main
+            (true, true) => {
+                // Both in main CJK: use kIICore region count to determine standard form
+                let iicore1 = self.get_iicore_count(char1);
+                let iicore2 = self.get_iicore_count(char2);
+
+                if iicore1 > iicore2 {
+                    Some((char2, char1)) // variant → standard (char1 is more standard)
+                } else if iicore2 > iicore1 {
+                    Some((char1, char2)) // variant → standard (char2 is more standard)
+                } else {
+                    // Equal or no kIICore data - skip ambiguous cases
+                    None
+                }
+            }
+            (false, false) => None, // Both in compatibility blocks - skip
+        }
+    }
+
+    /// Get kIICore region count for a character (higher count = more standard)
+    fn get_iicore_count(&self, ch: char) -> usize {
+        let code_point = format!("U+{:04X}", ch as u32);
+
+        // Try to read from Unihan IRG Sources file
+        if let Ok(contents) = fs::read_to_string("Unihan/Unihan_IRGSources.txt") {
+            for line in contents.lines() {
+                if line.starts_with(&code_point) && line.contains("kIICore") {
+                    // Extract kIICore value: "U+4E00  kIICore AGTJHKMP"
+                    if let Some(iicore_part) = line.split("kIICore").nth(1) {
+                        let iicore_regions = iicore_part.trim();
+                        return iicore_regions.len(); // Each letter = one region
+                    }
+                }
+            }
+        }
+
+        0 // No kIICore data found
+    }
+
+    /// Process compatibility variants excluding script pairs
+    fn process_compatibility_variants_clean(
+        &self,
+        path: &str,
+        script_pairs: &HashSet<(String, String)>,
+    ) -> Result<HashMap<String, String>, Box<dyn std::error::Error>> {
+        let mut compatibility_mappings = HashMap::new();
+        let file = File::open(path)?;
+        let reader = BufReader::new(file);
+
+        for line in reader.lines() {
+            let line = line?;
+            if line.starts_with('#') || line.trim().is_empty() {
+                continue;
+            }
+
+            let parts: Vec<&str> = line.split('\t').collect();
+            if parts.len() < 3 || parts[1] != "kCompatibilityVariant" {
+                continue;
+            }
+
+            let source_cp = parts[0];
+            let targets_raw = parts[2];
+
+            let Some(source_char) = code_point_to_char(source_cp) else {
+                continue;
+            };
+
+            if let Some(target_raw) = targets_raw.split_whitespace().next() {
+                let clean_target = target_raw.split('<').next().unwrap_or(target_raw);
+                if let Some(target_char) = code_point_to_char(clean_target) {
+                    let source_str = source_char.to_string();
+                    let target_str = target_char.to_string();
+
+                    // Skip if this pair is already handled by script conversion
+                    if script_pairs.contains(&(source_str.clone(), target_str.clone()))
+                        || script_pairs.contains(&(target_str.clone(), source_str.clone()))
+                    {
+                        continue;
+                    }
+
+                    // For compatibility variants, source is always the variant
+                    compatibility_mappings.insert(source_str, target_str);
+                }
+            }
+        }
+
+        // Save compatibility variants
+        let path = "data/processed/normalization/compatibility_variants.json";
+        let json = serde_json::to_string_pretty(&compatibility_mappings)?;
+        fs::write(path, json)?;
+        println!(
+            "✅ Saved {} compatibility variant mappings to: {}",
+            compatibility_mappings.len(),
+            path
+        );
+
+        Ok(compatibility_mappings)
+    }
+
+    /// Process Kangxi radicals excluding script pairs
+    fn process_kangxi_radicals_clean(
+        &self,
+        script_pairs: &HashSet<(String, String)>,
+    ) -> Result<HashMap<String, String>, Box<dyn std::error::Error>> {
         let mut kangxi_mappings = HashMap::new();
 
-        // Kangxi Radicals (U+2F00-U+2FDF) to Standard Characters
-        // This is a comprehensive mapping of all 214 Kangxi radicals
+        // Hardcoded Kangxi radical mappings (these are fixed Unicode assignments)
         let kangxi_data = [
             (0x2F00, '一'),
             (0x2F01, '丨'),
@@ -498,113 +626,36 @@ impl UnihanDataProcessor {
 
         for (code_point, standard_char) in kangxi_data {
             if let Some(kangxi_char) = char::from_u32(code_point) {
-                kangxi_mappings.insert(kangxi_char.to_string(), standard_char.to_string());
+                let kangxi_str = kangxi_char.to_string();
+                let standard_str = standard_char.to_string();
+
+                // Skip if this pair is already handled by script conversion
+                if !script_pairs.contains(&(kangxi_str.clone(), standard_str.clone()))
+                    && !script_pairs.contains(&(standard_str.clone(), kangxi_str.clone()))
+                {
+                    kangxi_mappings.insert(kangxi_str, standard_str);
+                }
             }
         }
 
         // Save Kangxi mappings
-        let kangxi_mappings_path = "data/processed/kangxi_mappings.json";
-        let kangxi_mappings_json = serde_json::to_string_pretty(&kangxi_mappings)?;
-        fs::write(kangxi_mappings_path, kangxi_mappings_json)?;
+        let path = "data/processed/normalization/kangxi_radicals.json";
+        let json = serde_json::to_string_pretty(&kangxi_mappings)?;
+        fs::write(path, json)?;
         println!(
-            "Saved {} Kangxi mappings to: {}",
+            "✅ Saved {} Kangxi radical mappings to: {}",
             kangxi_mappings.len(),
-            kangxi_mappings_path
+            path
         );
 
-        Ok(())
+        Ok(kangxi_mappings)
     }
 
-    /// Estimate character complexity based on Unicode block and code point
-    fn estimate_complexity(c: char) -> u32 {
-        let code = c as u32;
-
-        // Simple heuristic: characters in higher Unicode blocks tend to be more complex
-        // This is a rough approximation - in a real system you'd use actual stroke count data
-        if code >= 0x4E00 && code <= 0x9FFF {
-            // Main CJK Unified Ideographs
-            // Higher code points in this range tend to be more complex
-            (code - 0x4E00) / 1000 + 1
-        } else {
-            1
-        }
-    }
-
-    /// Calculate statistics about the mappings
-    fn calculate_stats(
-        &self,
-        traditional_to_simplified: &HashMap<String, Vec<ScriptMapping>>,
-        simplified_to_traditional: &HashMap<String, Vec<ScriptMapping>>,
-    ) -> ScriptMappingStats {
-        let total_mappings = traditional_to_simplified
-            .values()
-            .map(|v| v.len())
-            .sum::<usize>();
-        let unique_traditional = traditional_to_simplified.len();
-        let unique_simplified = simplified_to_traditional.len();
-
-        let ambiguous_mappings = traditional_to_simplified
-            .values()
-            .filter(|v| v.len() > 1)
-            .map(|v| v.len())
-            .sum::<usize>();
-
-        let single_character_mappings = traditional_to_simplified
-            .values()
-            .filter(|v| {
-                v.iter().all(|m| {
-                    m.traditional.chars().count() == 1 && m.simplified.chars().count() == 1
-                })
-            })
-            .map(|v| v.len())
-            .sum::<usize>();
-
-        let multi_character_mappings = total_mappings - single_character_mappings;
-
-        ScriptMappingStats {
-            total_mappings,
-            unique_traditional,
-            unique_simplified,
-            ambiguous_mappings,
-            single_character_mappings,
-            multi_character_mappings,
-        }
-    }
-
-    /// Save processed mappings to JSON file
-    pub fn save_mappings(
-        mappings: &ScriptMappings,
-        path: &str,
-    ) -> Result<(), Box<dyn std::error::Error>> {
-        let json = serde_json::to_string_pretty(mappings)?;
-        std::fs::write(path, json)?;
-        Ok(())
-    }
-
-    /// Load mappings from JSON file
-    pub fn load_mappings(path: &str) -> Result<ScriptMappings, Box<dyn std::error::Error>> {
-        let file = File::open(path)?;
-        let reader = std::io::BufReader::new(file);
-        let mappings: ScriptMappings = serde_json::from_reader(reader)?;
-        Ok(mappings)
-    }
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_variants_processing() {
-        // This test would require a small sample of the Unihan data
-        // For now, we'll just test that the processor can be created
-        let _processor = UnihanDataProcessor;
-        assert!(true); // Placeholder test
-    }
-
-    #[test]
-    fn test_code_point_conversion() {
-        assert_eq!(code_point_to_char("U+4E00"), Some('一'));
-        assert_eq!(code_point_to_char("U+9FFF"), Some('鿿'));
-    }
+    // === REMOVED LEGACY METHODS ===
+    // The following methods were removed as they're replaced by the new clean separation approach:
+    // - process_script_variants (replaced by process_script_conversion_mappings)
+    // - process_character_form_mappings (replaced by process_normalization_mappings)
+    // - process_kangxi_mappings (replaced by process_kangxi_radicals_clean)
+    // - estimate_complexity (replaced by get_iicore_count)
+    // - calculate_stats (replaced by inline statistics generation)
 }

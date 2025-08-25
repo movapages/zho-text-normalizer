@@ -4,6 +4,7 @@ use crate::types::{
     ChangeType, NormalizedText, TextChange, VariantMapping, VariantMappings, VariantType,
 };
 use serde_json;
+use std::collections::HashMap;
 use std::fs;
 use std::path::Path;
 
@@ -78,26 +79,39 @@ impl VariantNormalizer {
         }
     }
 
-    /// Load enhanced variant mappings from the master variant mappings file
+    /// Load variant mappings from the new clean normalization structure
     fn load_enhanced_variant_mappings() -> VariantMappings {
-        let mappings_path = Path::new("data/processed/variant_mappings.json");
+        let mut variant_mappings = VariantMappings::new();
+        let mut total_loaded = 0;
 
-        if let Ok(contents) = fs::read_to_string(mappings_path) {
-            if let Ok(variant_mappings) = serde_json::from_str::<VariantMappings>(&contents) {
-                println!(
-                    "Loaded {} variant mappings ({} semantic, {} spoofing, {} Z-variants, {} specialized)",
-                    variant_mappings.statistics.total_mappings,
-                    variant_mappings.statistics.semantic_mappings,
-                    variant_mappings.statistics.spoofing_mappings,
-                    variant_mappings.statistics.z_variant_mappings,
-                    variant_mappings.statistics.specialized_mappings
-                );
-                return variant_mappings;
+        // Load semantic variants
+        let semantic_path = Path::new("data/processed/normalization/semantic_variants.json");
+        if let Ok(contents) = fs::read_to_string(semantic_path) {
+            if let Ok(semantic_map) = serde_json::from_str::<HashMap<String, String>>(&contents) {
+                for (source, target) in semantic_map {
+                    if let (Some(source_char), Some(target_char)) =
+                        (source.chars().next(), target.chars().next())
+                    {
+                        let mapping = VariantMapping {
+                            source: source_char,
+                            target: target_char,
+                            variant_type: crate::types::VariantType::Semantic,
+                            confidence: 0.9,
+                            bidirectional: false,
+                            source_info: "Unihan".to_string(),
+                        };
+                        variant_mappings.add_mapping(mapping);
+                        total_loaded += 1;
+                    }
+                }
             }
         }
 
-        println!("Warning: Could not load enhanced variant mappings, using empty mappings");
-        VariantMappings::new()
+        println!(
+            "Loaded {} semantic variant mappings from clean data",
+            total_loaded
+        );
+        variant_mappings
     }
 
     /// Get all available mappings for a character (for debugging/analysis)

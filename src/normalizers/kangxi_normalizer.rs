@@ -49,30 +49,14 @@ impl KangxiNormalizer {
         }
     }
 
-    /// Load Kangxi mappings from the separated mapping file
+    /// Load Kangxi mappings from the new clean normalization structure
     fn load_kangxi_mappings() -> HashMap<char, char> {
         let mut kangxi_map = HashMap::new();
 
-        // Try to load from the Kangxi mappings file
-        // Try multiple possible paths
-        let possible_paths = [
-            "data/processed/kangxi_mappings.json",
-            "../zho-text-normalizer/data/processed/kangxi_mappings.json",
-            "zho-text-normalizer/data/processed/kangxi_mappings.json",
-        ];
+        // Load from the new normalization structure
+        let kangxi_path = Path::new("data/processed/normalization/kangxi_radicals.json");
 
-        let mut mappings_path = None;
-        for path in &possible_paths {
-            if Path::new(path).exists() {
-                mappings_path = Some(Path::new(path));
-                break;
-            }
-        }
-
-        let mappings_path =
-            mappings_path.unwrap_or(Path::new("data/processed/kangxi_mappings.json"));
-
-        if let Ok(contents) = fs::read_to_string(mappings_path) {
+        if let Ok(contents) = fs::read_to_string(kangxi_path) {
             if let Ok(mappings) = serde_json::from_str::<HashMap<String, String>>(&contents) {
                 for (kangxi, standard) in mappings {
                     if let (Some(kangxi_char), Some(standard_char)) =
@@ -81,12 +65,13 @@ impl KangxiNormalizer {
                         kangxi_map.insert(kangxi_char, standard_char);
                     }
                 }
+                println!(
+                    "Loaded {} Kangxi radical mappings from clean data",
+                    kangxi_map.len()
+                );
             }
-        }
-
-        // No fallback needed - JSON file is always generated and committed to Git
-        if kangxi_map.is_empty() {
-            eprintln!("Warning: Failed to load Kangxi mappings from JSON file");
+        } else {
+            eprintln!("Warning: Failed to load Kangxi mappings from clean normalization data");
         }
 
         kangxi_map

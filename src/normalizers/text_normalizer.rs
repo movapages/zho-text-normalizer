@@ -147,7 +147,7 @@ mod tests {
         let normalizer = TextNormalizer::new();
         let result = normalizer.normalize("硏究敎育", None);
 
-        assert_eq!(result.normalized, "硏究敎毓");
+        assert_eq!(result.normalized, "硏究教育"); // Updated for kIICore algorithm
         assert!(!result.changes.is_empty());
     }
 
